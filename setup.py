@@ -8,7 +8,7 @@ with open('README.md', 'r') as f:
 if __name__ == '__main__':
     setup(
         name='youtube-dl-service',
-        version='0.0.1',
+        version='0.0.2',
         author='Dmitriy Pleshevskiy',
         author_email='dmitriy@ideascup.me',
         description='Using youtube-dl as service in python code',

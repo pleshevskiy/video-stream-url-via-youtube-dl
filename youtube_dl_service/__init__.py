@@ -27,7 +27,7 @@ def youtube_list_formats_by_video_id(video_id):
     output = ydl_grep_proc.communicate()[0]
 
     return [
-        YoutubeFormat(*row.split(None, 4))
+        YoutubeFormat(video_id, *row.split(None, 4))
         for row in output.decode().split('\n')
         if row
     ]
